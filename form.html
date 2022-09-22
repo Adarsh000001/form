@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title>
+            Signup
+        </title>
+        <style>
+            #edit {
+                padding: 70px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 300px;
+                background-color: azure;
+            }
+           #label {
+               margin-bottom:2px;
+               margin-top: 7px;
+           } 
+          #input-item {
+              width: 100%;
+              background-color: rgb(210, 215, 230);
+              padding-top: 4px;
+              padding-bottom: 4px;
+          } 
+         #check-box {
+             margin-top: 14px;
+             margin-bottom: 64px;
+         } 
+        #reg {
+            margin-left: 90px;
+            background-color: blue; color: white; 
+            padding: 10px;
+        }
+        </style>
+    </head>
+   <body style="background-color: rgb(143, 250, 147);">
+      
+       <form id="edit" method="get"> 
+           <h1 style="text-align: center;">Signup</h1>
+           <div> 
+                      
+             <input id="input-item" type="fullname" name="fullaname"  placeholder="Fullname" autofocus  required > 
+           </div><br>
+         <div>
+           
+             <input id="input-item" type="mail" name="mail" autofocus placeholder="Email" required > 
+         </div> <br> 
+         <div>
+            
+             <input id="input-item" type="password" name="password" autofocus placeholder="Password" required maxlength="8">
+         </div> <br>
+         <div>
+            
+             <input id="input-item" type="password" name="confirm-pass" autofocus placeholder="Confirm Password" required maxlength="8" > 
+         </div><br>
+         <div>
+             <p id="label"> Date of Birth: </p>
+             <input id="input-item" type="date" name="DOB" max="2005-04-01" autofocus required>
+         </div>
+         <div>
+             <p id="label"> Upload your photo: </p>
+             <input  type="file" name="image" autofocus >
+         </div>
+         <p id="label">Gender: </p> 
+         <input type="radio" name="male" value="male" autofocus > larka
+         <input type="radio" name="female" value="male" autofocus>  larki
+         <input type="radio" name="others" value="Others" autofocus> Gay
+         
+         <br>
+         <p id="label">Security Questions: </p> 
+         <select autofocus required>
+            <option value="childhoo-friend">what was the name of your childhood best friend</option>
+            <option value="school"> what was the name of your primary school</option> 
+            <option value="nicname"> what is yournickname</option>
+            <option value="favouritegame">what is your favourite Game</option>
+
+         </select> <br>
+         <textarea  style="background-color: lightcyan;" name="answer"  cols="39" rows="10"></textarea> <br>
+      <br>
+         <div>
+             <p id="label"> You are expert in:</p>
+             <input id="input-item" list="techs & tools" name="t & t" autofocus required>
+             <datalist id="techs & tools" multiple>
+                 <option value="HTML">
+                 <option value="CSS">
+                 <option value="JavasScript">
+                 <option value="Node">
+                 <option value="React">
+                 <option value="C/C++">
+                 <option value="Java">
+                 <option value="Python">
+                 <option value="Swift">
+             </datalist>
+         </div>
+         <hr>
+           <input id="check-box" type="checkbox" value="agreed" autofocus required> I agree accept to <a href="">terms and conditions </a>. 
+                          
+         <input id="reg" type="submit" name="ok" value="Register" autofocus> 
+         <input type="reset" value="reset" autofocus>
+        
+       
+       </form>
+   </body> 
+</html>
